@@ -1,0 +1,18 @@
+ <div class="container1">
+   <h3 style="text-align: center; color:fuchsia;">Yours Whishlisted Books</h3>
+   <table>
+        <tr>
+            <th>Book Id</th>
+            <th>Book Name</th>
+            <th>Author Name</th>
+            <th>Description</th>
+            
+        </tr>
+        <tr *ngFor="let wish of wished | wishlistedBooks">
+            <td>{{ wish.id }}</td>
+            <td>{{ wish.Book_name }}</td>
+            <td>{{ wish.Author_name }}</td>
+            <td>{{ wish.Description }}</td>
+        </tr>
+    </table>
+</div>  

@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>Book Id</th>
+        <th>Book Namw</th>
+        <th>Author Name</th>
+        <th>Description</th>
+        <th>Wishlist</th>
+        <th>Completed</th>
+        
+    </tr>
+    <tr *ngFor="let book of books">
+        <td>{{ book.id }}</td>
+        <td>{{ book.Book_name }}</td>
+        <td>{{ book.Author_name }}</td>
+        <td>{{ book.Description }}</td>
+        <td><app-button color="orange" text="Wishlist" (btnClick)="Wishlist(book.id)"></app-button></td>
+        <td><app-button color="limegreen" text="Completed" (btnClick)="Complete(book.id)"></app-button></td>
+    </tr>
+</table>

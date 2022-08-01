@@ -1,0 +1,17 @@
+<div class="container1">
+    <h3 style="text-align: center; color:fuchsia;">Yours Completed Books</h3>
+    <table>
+     <tr>
+         <th>Book Id</th>
+         <th>Book Name</th>
+         <th>Author Name</th>
+         <th>Description</th>    
+     </tr>
+     <tr *ngFor="let complete of completed | completeBooks">
+         <td>{{ complete.id }}</td>
+         <td>{{ complete.Book_name }}</td>
+         <td>{{ complete.Author_name }}</td>
+         <td>{{ complete.Description }}</td>
+     </tr>
+    </table>
+</div>  
